@@ -1,0 +1,42 @@
+---
+title: "My test page"
+author: "Susan"
+output: html_document
+email_address: smk6598@psu.edu
+github_repo: https://github.com/skotikot/testPage
+---
+
+```{r, echo=FALSE, message=FALSE}
+library(lubridate)
+```
+
+
+
+```{css, echo=FALSE}
+.author, .title {
+display: none;
+}
+
+.main-container {
+max-width: 100%;
+
+}
+body {
+background-color: black;
+color: white;
+font-size: 1.2vw;
+
+}
+```
+
+
+An image of  rainfall
+
+![](ElevationStudyArea_14Dec21.png)
+https://www.youtube.com/watch?v=ozta7H7WK58
+ 
+Last updated on `r today()`    
+
+Site [created](`r rmarkdown::metadata$github_repo`) by [Susan Kotikot](mailto: `r rmarkdown::metadata$email_address`)
+
+
